@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Practical 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            background-color: #f2f2f7;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #007aff;
+        }
+        table tr:last-child td {
+          color: lightblue;
+        }
+        
+         p::first-letter {
+         font-size: 120%;
+         }
+ 
+         ::selection {
+         background-color: lightblue
+          ;
+         }
+  
+          ul li:nth-child(even),
+         table tr:nth-child(even) {
+          background-color: #9999ff;
+         }
+  
+         :is(div) {
+         font-style: Hanson;
+         }
+         p:hover, mark:hover {
+            background-color: #DCDCDC;
+            transition: background-color 0.3s ease;
+        }
+
+        p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #d1d1d6;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f7;
+            font-weight: 500;
+        }
+
+        caption {
+            caption-side: top;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .blockquote {
+            margin: 0;
+            padding: 20px;
+            border-left: 5px solid #007aff;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .blockquote p {
+            margin: 0;
+        }
+
+        .blockquote cite {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .blockquote cite a {
+            color: #007aff;
+        }
+
+        dl {
+            margin-bottom: 20px;
+        }
+
+        dt {
+            font-weight: 500;
+        }
+
+        dt, dd {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="text">
+            <article id="text__headings">
+                <header>
+                  <h2 style="text-align:center">Polina Baranovskaya</h2>
+                </header>
+                <div>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
+                <footer>
+                    <p><a href="#link">[link]</a></p>
+                </footer>
+            </article>
+            <article id="text__paragraphs">
+                <header>
+
+ <header>
+            <h2>What is selector’s specificity and who it’s calculated?</h2>
+          </header>
+          <div>
+            <p>A selector's specificity is a way to determine which style rules are applied to an element when there are multiple conflicting rules. Specificity is calculated based on different factors, including the type of selector used and any additional modifiers such as classes, IDs, or inline styles. The specificity is represented in a numerical value, where higher values indicate higher specificity.
+</p>
+          </div>
+          <footer>
+            <p><a href="#link">[link]</a></p>
+			</footer>
+			<header>
+            <h2>What are complex selectors?</h2>
+          </header>
+          <div>
+            <p>Complex selectors are selectors that are more specific and target elements based on multiple conditions. They can include combinations of different types of selectors, such as descendant selectors, child selectors, attribute selectors, and pseudo-classes.
+</p>
+          </div>
+          <footer>
+            <p><a href="#link">[link]</a></p>
+			</footer>
+			<header>
+            <h2>What is the difference between pseudo-classes and pseudo-elements?</h2>
+          </header>
+          <div>
+            <p>Pseudo-classes are used to style elements based on their state or position in the document. They are denoted by a colon followed by the pseudo-class name, such as :hover or :first-child. Pseudo-elements, on the other hand, allow styling of specific parts of an element, such as the first line of a paragraph or the first letter of a word. Pseudo-elements are denoted by a double colon followed by the pseudo-element name, such as ::before or ::after.</p>
+                    <h1>Paragraphs</h1>
+                </header>
+                <div>
+                    <p>Do you already know and have bought a domain for a new website?</p>
+                    <p>How many pages will there be on the site?</p>
+                    <p>How much content do I need to create?</p>
+                </div>
+                <footer>
+                    <p><a href="#link">[link]</a></p>
+                </footer>
+            </article>
+            <article id="text__blockquotes">
+                <header>
+                    <h1>Blockquotes</h1>
+                </header>
+                <div class="blockquote">
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+                    <cite><a href="#!">link.com</a></cite>
+                </div>
+                <footer>
+                    <p><a href="#link">[link]</a></p>
+                </footer>
+            </article>
+            <article id="text__lists">
+                <header>
+                    <h1>Lists</h1>
+                </header>
+                <div>
+                    <h3>Definition list</h3>
+                    <dl>
+                        <dt>Definition List Title</dt>
+                        <dd>This is a definition list division.</dd>
+                    </dl>
+                    <h3>Ordered List</h3>
+                    <ol>
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                    </ol>
+                    <h3>Unordered List</h3>
+                    <ul>
+                        <li>List Item 1</li>
+                        <li>List Item 2</li>
+                        <li>List Item 3</li>
+                    </ul>
+                </div>
+                <footer>
+                    <p><a href="#link">[link]</a></p>
+                </footer>
+            </article>
+            <article id="text__tables">
+                <header>
+                    <h1>Tabular data</h1>
+                </header>
+                <table>
+                    <caption>Table Caption</caption>
+                    <thead>
+                        <tr>
+                            <th>Table Heading 1</th>
+                            <th>Table Heading 2</th>
+                            <th>Table Heading 3</th>
+                            <th>Table Heading 4</th>
+                            <th>Table Heading 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                        <tr>
+                            <td>Table Cell 1</td>
+                            <td>Table Cell 2</td>
+                            <td>Table Cell 3</td>
+                            <td>Table Cell 4</td>
+                            <td>Table Cell 5</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Table Footer 1</th>
+                            <th>Table Footer 2</th>
+                            <th>Table Footer 3</th>
+                            <th>Table Footer 4</th>
+                            <th>Table Footer 5</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <footer>
+                    <p><a href="#link">[link]</a></p>
+                </footer>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html> 
